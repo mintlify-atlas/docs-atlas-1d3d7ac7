@@ -1,0 +1,96 @@
+{
+  "projectType": "frontend",
+  "projectName": "La Velada",
+  "projectDescription": "Official website for La Velada V, a boxing event featuring streamers, content creators, and celebrities.",
+  "theme": "almond",
+  "primaryColor": "#f4e4cc",
+  "lightColor": "#a8a39f",
+  "darkColor": "#5b483c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/project-structure",
+              "architecture/tech-stack"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/overview",
+              "components/fighters",
+              "components/combats",
+              "components/predictions"
+            ]
+          },
+          {
+            "group": "Data & Constants",
+            "pages": [
+              "data/fighters-data",
+              "data/combats-data",
+              "data/artists-sponsors"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Predictions API",
+            "pages": [
+              "api/overview",
+              "api/get-predictions",
+              "api/vote-prediction",
+              "api/user-predictions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Contributing",
+        "groups": [
+          {
+            "group": "Developer Guide",
+            "pages": [
+              "contributing/getting-started",
+              "contributing/guidelines",
+              "contributing/component-development"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Event information and countdown",
+    "Fighter profiles and combat details",
+    "Real-time predictions system with Turso database",
+    "User authentication via Twitch",
+    "Responsive design with Tailwind CSS",
+    "Server-side rendering with Astro"
+  ],
+  "publicApiSurface": [
+    "GET /api/get-predictions",
+    "POST /api/vote-prediction",
+    "GET /api/user-predictions",
+    "FIGHTERS constant (fighter profiles)",
+    "COMBATS constant (combat matchups)",
+    "BoxerCard component",
+    "CombatVersus component",
+    "FighterSelector component",
+    "PredictionCard component"
+  ]
+}
